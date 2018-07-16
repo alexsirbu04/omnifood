@@ -1,3 +1,12 @@
+/* ----------------------------
+Main color: #e67e22
+Darker main color: #b05d14
+---------------------------- */
+
+/* ----------------------------
+COMMON
+---------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +24,267 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: white;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #e67e22;
+  content: " ";
+  margin: 30px auto;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ----------------------------
+HEADER
+---------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  float: left;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: white;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 5px;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 5px;
+}
+
+/* ----------------------------
+PARAGRAPHS
+---------------------------- */
+
+.long-copy {
+  line-height: 145%;
+  font-size: 110%;
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+}
+
+/* ----------------------------
+BUTTONS
+---------------------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  border-radius: 5px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: white;
+  border: 1px solid #e67e22;
+  margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #b05d14;
+  border: 1px solid #b05d14;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+  border-radius: 5px;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #b05d14;
+  color: #b05d14;
+}
+
+/* ----------------------------
+FEATURES
+---------------------------- */
+
+.feature {
+  padding: 1%;
+}
+
+.feature p {
+  font-size: 90%;
+  line-height: 145%;
+  text-align: justify;
+}
+
+.feature h3 {
+  text-align: center;
+}
+
+.feature-icon {
+  display: block;
+  font-size: 200%;
+  color: #e67e22;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.features-section .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ----------------------------
+MEALS
+---------------------------- */
+
+.meals-section {
+  padding: 0;
+}
+
+.meals {
+  width: 100%;
+}
+
+.meals li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.meal img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* ----------------------------
+DESCRIPTION
+---------------------------- */
+
+.description-container:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.description-container:last-child {
+  padding-left: 3%;
+  margin-top: 100px;
+}
+
+.app-screen {
+  width: 40%;
+  height: auto;
+}
+
+.step-container {
+  margin-bottom: 40px;
+}
+
+.step-container div {
+  height: 52px;
+  width: 52px;
+  font-size: 150%;
+  text-align: center;
+  color: #e67e22;
+  border: 1px solid #e67e22;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 25px;
+  float: left;
+}
+
+.step-container:last-of-type {
+  margin-bottom: 60px;
+}
+
+.btn-app img {
+  height: 50px;
+  margin-right: 10px;
 }
